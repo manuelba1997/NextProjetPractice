@@ -11,7 +11,7 @@ function App() {
     <>
       <h1>Hello React</h1>
       <p>Wellcome to my first React APP</p>
-      <Greeting />
+      <Greeting name='Manuel' />
     </>
   )
 }
