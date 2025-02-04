@@ -5,6 +5,7 @@ import './App.css'
 import Greeting from './components/Greeting'
 import Footer from './components/Footer'
 import "./styles/styles.css"
+import UserCard from './components/UserCard'
 
 function App() {
   /*const [count, setCount] = useState(0)*/
@@ -14,6 +15,7 @@ function App() {
       <h1 className='main-heading'>Hello React</h1>
       <p>Wellcome to my first React APP</p>
       <Greeting name='Manuel' />
+      <UserCard/>
       <Footer />
     </main>
   )
