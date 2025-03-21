@@ -2,33 +2,23 @@
 /*import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'*/
 import './App.css'
-import Greeting from './components/Greeting'
-import Footer from './components/Footer'
-import "./styles/styles.css"
-import UserCard from './components/UserCard'
-import SectionComponent from './components/SectionComponent'
-import CounterContainer from './components/CounterContainer'
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+
 
 function App() {
-  /*const [count, setCount] = useState(0)*/
-
-  return (
-    <main>
+    return ( <main>
       
-      <h1 className='main-heading'>Hello React</h1>
-      <div className='topContainer'>
-      <p>Wellcome to my first React APP</p>
-      <Greeting name='Manuel' />
-      </div>
-      <SectionComponent>
-      <UserCard/>
-      <UserCard/>
-      <UserCard/>
-      </SectionComponent>
-      <CounterContainer />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+      
     </main>
-  )
-}
-
+  );  
+};
 export default App
+
